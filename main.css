@@ -86,22 +86,25 @@ width: 550px;
 	overflow: scroll;
 }
 
-a: hover { 
-    color: lightblue;
+
+
+a:hover {
+    background-color: white;
+    -webkit-animation-name: example;
+    -webkit-animation-duration: 4s;
     animation-name: example;
+    animation-duration: 4s;    
+
+}
+
+@-webkit-keyframes example {
+    from {background-color: transparent;}
+    to {background-color: blue;}
 }
 
 a {
-    color: yellow
+    color: yellow;
 }
-
-/* Chrome, Safari, Opera */
-@keyframes example {
-    from {background-color: transparent;}
-    to {background-color: lightblue;}
-}
-
-
 
 @-webkit-keyframes colorize {
     0% {
